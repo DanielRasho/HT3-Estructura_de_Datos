@@ -1,4 +1,4 @@
-package org;
+package App_main;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

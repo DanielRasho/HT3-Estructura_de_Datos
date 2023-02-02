@@ -4,11 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b0c651b-4fbd-43aa-9220-a6a4beda27f6" name="Changes" comment="" />
+    <list default="true" id="0b0c651b-4fbd-43aa-9220-a6a4beda27f6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/App_main/InvertedMinAndMaxBoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/App_main/RandomNumberGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/App_main/RandomNumberGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/RandomNumberGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/SortingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/App_main/AppTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -23,14 +43,117 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RandomNumberGeneratorTest">
+    <configuration name="RandomNumberGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNumberGeneratorTest.ReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
+      <option name="METHOD_NAME" value="ReadFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNumberGeneratorTest.WriteFile (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
+      <option name="METHOD_NAME" value="WriteFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNumberGeneratorTest.WriteFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org" />
+      <option name="MAIN_CLASS_NAME" value="org.RandomNumberGeneratorTest" />
+      <option name="METHOD_NAME" value="WriteFile" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RandomNumberGeneratorTest" />
+        <item itemvalue="JUnit.RandomNumberGeneratorTest.ReadFile" />
+        <item itemvalue="JUnit.RandomNumberGeneratorTest.WriteFile (1)" />
+        <item itemvalue="JUnit.RandomNumberGeneratorTest.WriteFile" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,8 +162,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675094317018</updated>
-      <workItem from="1675094318503" duration="1000" />
+      <workItem from="1675094318503" duration="1607000" />
+      <workItem from="1675097435428" duration="1684000" />
+      <workItem from="1675307297216" duration="2240000" />
+      <workItem from="1675374542377" duration="1059000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
