@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0c651b-4fbd-43aa-9220-a6a4beda27f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/App_main/InvertedMinAndMaxBoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/App_main/RandomNumberGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/App_main/RandomNumberGeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/RandomNumberGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/SortingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/App_main/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +58,14 @@
       <recent name="junit.framework.TestCase" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="App_main" />
       <recent name="org" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RandomNumberGeneratorTest">
+  <component name="RunManager" selected="JUnit.SortingMethodsTest">
     <configuration name="RandomNumberGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sorting" />
       <extension name="coverage">
@@ -118,17 +113,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomNumberGeneratorTest.WriteFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortingMethodsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sorting" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.*" />
+          <option name="PATTERN" value="App_main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org" />
-      <option name="MAIN_CLASS_NAME" value="org.RandomNumberGeneratorTest" />
-      <option name="METHOD_NAME" value="WriteFile" />
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingMethodsTest.testGnomeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="METHOD_NAME" value="testGnomeSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,10 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortingMethodsTest.testGnomeSort" />
+        <item itemvalue="JUnit.SortingMethodsTest" />
         <item itemvalue="JUnit.RandomNumberGeneratorTest" />
         <item itemvalue="JUnit.RandomNumberGeneratorTest.ReadFile" />
         <item itemvalue="JUnit.RandomNumberGeneratorTest.WriteFile (1)" />
-        <item itemvalue="JUnit.RandomNumberGeneratorTest.WriteFile" />
       </list>
     </recent_temporary>
   </component>
@@ -166,10 +177,22 @@
       <workItem from="1675097435428" duration="1684000" />
       <workItem from="1675307297216" duration="2240000" />
       <workItem from="1675374542377" duration="1059000" />
+      <workItem from="1675378914107" duration="1364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
