@@ -195,7 +195,7 @@ public class SortingMethods {
      * @return Sorted List based on the selected index.
      * @param <T> Object type of the items stored in the given data.
      */
-    public static <T extends Comparable<T>> List<T> orderByBuckets (List<T> data, Function<T, Integer> getNumericValue, int digitIndex){
+    private static <T extends Comparable<T>> List<T> orderByBuckets (List<T> data, Function<T, Integer> getNumericValue, int digitIndex){
         int i, j;
         int dataSize = data.size();
         T value;

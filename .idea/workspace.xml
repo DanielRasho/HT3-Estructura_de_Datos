@@ -7,7 +7,6 @@
     <list default="true" id="0b0c651b-4fbd-43aa-9220-a6a4beda27f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,18 +189,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
           <line>217</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
-          <line>100</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
