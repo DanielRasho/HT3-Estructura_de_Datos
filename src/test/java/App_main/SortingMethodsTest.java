@@ -8,16 +8,19 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class SortingMethodsTest {
 
     static List<Integer> unsortedNumbers = new ArrayList<Integer>();
 
     @BeforeClass
     public static void setup(){
-        unsortedNumbers.add(4);
         unsortedNumbers.add(2);
-        unsortedNumbers.add(1);
+        unsortedNumbers.add(6);
+        unsortedNumbers.add(11);
         unsortedNumbers.add(3);
+        unsortedNumbers.add(4);
     }
 
     @Test
@@ -34,5 +37,26 @@ public class SortingMethodsTest {
 
     @Test
     public void testShellSort() {
+    }
+
+    @Test
+    public void testQuickSort(){
+        List<Integer> tempList = SortingMethods.QuickSort(unsortedNumbers);
+        for (Integer i: tempList) {
+            System.out.println(i);
+        }
+    }
+
+    @Test
+    public void testRadixSort(){
+        List<Integer> tempList = SortingMethods.RadixSort(unsortedNumbers, Integer::intValue);
+        for (Integer i: tempList) {
+            System.out.println(i);
+        }
+    }
+
+    @Test
+    public void testBucketSort(){
+        SortingMethods.orderByBuckets(unsortedNumbers, Integer::intValue, 0);
     }
 }

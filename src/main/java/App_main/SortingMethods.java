@@ -1,8 +1,11 @@
 package App_main;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static java.lang.Character.getNumericValue;
 
 public class SortingMethods {
 
@@ -69,14 +72,16 @@ public class SortingMethods {
         return result; // Imprime la lista ordenada
     }
 
-    public static <T> List<T> QuickSort(List<Comparable<T>> listQuick) {
-        return null;
-
+    public static <T extends Comparable<T>> List<T> QuickSort(List<T> data) {
+        QuickSortRecursive(data, 0, data.size() - 1);
+        return data;
     }
 
-    public static <T> List<T> RadixSort(List<Comparable<T>> listRadix) {
-        return null;
-
+    public static <T extends Comparable<T>> List<T> RadixSort(List<T> data, Function<T, Integer> getNumericValue) {
+        for(int i = 0; i < 6; i++){
+            data = orderByBuckets(data, getNumericValue, i);
+        }
+        return data;
     }
 
     public static <T extends Comparable<T>> List<T> ShellSort(List<T> listMethods) {
@@ -103,5 +108,66 @@ public class SortingMethods {
             gap = gap / 2;
         }
         return listMethods;
+    }
+
+    private static <T extends Comparable<T>> int partition(List<T> data, int left, int right){
+        while(true){
+            T leftValue = data.get(left);
+            T rightValue = data.get(right);
+            while (left < right &&
+                    data.get(left).compareTo(data.get(right)) < 0)
+                right --;
+
+            if(left < right) {
+                Collections.swap(data, left, right);
+                left++;
+            }
+            else return left;
+
+            while(left < right &&
+                    data.get(left).compareTo(data.get(right)) < 0) left ++;
+
+            if(left < right) {
+                Collections.swap(data, left, right);
+                right --;
+            }
+            else return right;
+        }
+    }
+
+    private static <T extends Comparable<T>> void QuickSortRecursive(List<T> data, int left, int right) {
+        int pivot;
+        if (left >= right) return;
+        pivot = partition(data, left, right);
+        QuickSortRecursive(data, left, pivot -1);
+        QuickSortRecursive(data, pivot + 1, right);
+    }
+
+    private static int getDigit(int number, int digitIndex){
+        if (digitIndex == 0) return number % 10; // Returning the last digit.
+        else return getDigit(number/10, digitIndex - 1);
+    }
+
+    public static <T extends Comparable<T>> List<T> orderByBuckets (List<T> data, Function<T, Integer> getNumericValue, int digitIndex){
+        int i, j;
+        int dataSize = data.size();
+        T value;
+        // Creating buckets of data.
+        ArrayList<ArrayList<T>> BucketSet = new ArrayList<>();
+        // Create buckets to hold values
+        for(j = 0; j < 10; j++) BucketSet.add(new ArrayList<T>());
+
+        // Classifying values by its digit on digitIndex.
+        for(i = 0; i < dataSize; i++){
+            value =data.get(i);
+            j = getDigit(getNumericValue.apply(value) , digitIndex);
+            BucketSet.get(j).add(value);
+        }
+
+        // Unpacking values withing each bucket.
+        List<T> SortedData = new ArrayList<>();
+        for (ArrayList<T> bucket: BucketSet)
+            SortedData = Stream.concat(SortedData.stream(), bucket.stream()).collect(Collectors.toList());
+        return SortedData;
     }
 }

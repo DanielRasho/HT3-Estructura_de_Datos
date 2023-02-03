@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b0c651b-4fbd-43aa-9220-a6a4beda27f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/App_main/SortingMethodsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,55 +65,8 @@
       <recent name="org" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SortingMethodsTest">
-    <configuration name="RandomNumberGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sorting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App_main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="App_main" />
-      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomNumberGeneratorTest.ReadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sorting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App_main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="App_main" />
-      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
-      <option name="METHOD_NAME" value="ReadFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomNumberGeneratorTest.WriteFile (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sorting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App_main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="App_main" />
-      <option name="MAIN_CLASS_NAME" value="App_main.RandomNumberGeneratorTest" />
-      <option name="METHOD_NAME" value="WriteFile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingMethodsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SortingMethodsTest.testRadixSort">
+    <configuration name="SortingMethodsTest.testBucketSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sorting" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +76,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="App_main" />
       <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testBucketSort" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,6 +98,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingMethodsTest.testPartition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="METHOD_NAME" value="testPartition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingMethodsTest.testQuickSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="METHOD_NAME" value="testQuickSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingMethodsTest.testRadixSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="METHOD_NAME" value="testRadixSort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortingMethodsTest.testRadixSort" />
+        <item itemvalue="JUnit.SortingMethodsTest.testBucketSort" />
+        <item itemvalue="JUnit.SortingMethodsTest.testQuickSort" />
+        <item itemvalue="JUnit.SortingMethodsTest.testPartition" />
         <item itemvalue="JUnit.SortingMethodsTest.testGnomeSort" />
-        <item itemvalue="JUnit.SortingMethodsTest" />
-        <item itemvalue="JUnit.RandomNumberGeneratorTest" />
-        <item itemvalue="JUnit.RandomNumberGeneratorTest.ReadFile" />
-        <item itemvalue="JUnit.RandomNumberGeneratorTest.WriteFile (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +179,7 @@
       <workItem from="1675097435428" duration="1684000" />
       <workItem from="1675307297216" duration="2240000" />
       <workItem from="1675374542377" duration="1059000" />
-      <workItem from="1675378914107" duration="1364000" />
+      <workItem from="1675378914107" duration="9105000" />
     </task>
     <servers />
   </component>
@@ -189,8 +191,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
+          <line>81</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
