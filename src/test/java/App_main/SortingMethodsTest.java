@@ -1,7 +1,5 @@
 package App_main;
 
-import junit.framework.TestCase;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -13,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class SortingMethodsTest {
 
     static List<Integer> unsortedNumbers = new ArrayList<Integer>();
+    static List<Integer> sortedNumbers = new ArrayList<Integer>();
 
     @BeforeClass
     public static void setup(){
@@ -21,6 +20,12 @@ public class SortingMethodsTest {
         unsortedNumbers.add(11);
         unsortedNumbers.add(3);
         unsortedNumbers.add(4);
+
+        sortedNumbers.add(2);
+        sortedNumbers.add(3);
+        sortedNumbers.add(4);
+        sortedNumbers.add(6);
+        sortedNumbers.add(11);
     }
 
     @Test
@@ -29,6 +34,7 @@ public class SortingMethodsTest {
         for (Integer i: tempList) {
             System.out.println(i);
         }
+        assertEquals(tempList, sortedNumbers);
     }
 
     @Test
@@ -45,6 +51,7 @@ public class SortingMethodsTest {
         for (Integer i: tempList) {
             System.out.println(i);
         }
+        assertEquals(tempList, sortedNumbers);
     }
 
     @Test
@@ -53,10 +60,6 @@ public class SortingMethodsTest {
         for (Integer i: tempList) {
             System.out.println(i);
         }
-    }
-
-    @Test
-    public void testBucketSort(){
-        SortingMethods.orderByBuckets(unsortedNumbers, Integer::intValue, 0);
+        assertEquals(tempList, sortedNumbers);
     }
 }
