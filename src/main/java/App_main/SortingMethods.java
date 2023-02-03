@@ -72,11 +72,24 @@ public class SortingMethods {
         return result; // Imprime la lista ordenada
     }
 
+    /**
+     * Implementation of Quick Sort.
+     * @param data Data to sort.
+     * @return Sorted List based on a numeric paramater.
+     * @param <T> Object type of the items stored in the given data.
+     */
     public static <T extends Comparable<T>> List<T> QuickSort(List<T> data) {
         QuickSortRecursive(data, 0, data.size() - 1);
         return data;
     }
 
+    /**
+     * Implementation of Radix Sort Algorithm
+     * @param data Data to sort
+     * @param getNumericValue Getter function for fetching the numeric attribute of the object.
+     * @return Sorted List based on a numeric parameter.
+     * @param <T> Object type of the items stored in the given data.
+     */
     public static <T extends Comparable<T>> List<T> RadixSort(List<T> data, Function<T, Integer> getNumericValue) {
         for(int i = 0; i < 6; i++){
             data = orderByBuckets(data, getNumericValue, i);
@@ -110,10 +123,21 @@ public class SortingMethods {
         return listMethods;
     }
 
+    /**
+     * Takes the first object of a collection and position it, in the place
+     * it would be, if the array will be fully sorted.
+     * @param data Data to analyze.
+     * @param left Left boundary to start sorting.
+     * @param right Right boundary to end sorting.
+     * @return Index in which the first object
+     * @param <T> Object type of the items stored in the given data.
+     */
     private static <T extends Comparable<T>> int partition(List<T> data, int left, int right){
         while(true){
             T leftValue = data.get(left);
             T rightValue = data.get(right);
+
+            // Looking for values that are inferior and swapping them.
             while (left < right &&
                     data.get(left).compareTo(data.get(right)) < 0)
                 right --;
@@ -124,6 +148,7 @@ public class SortingMethods {
             }
             else return left;
 
+            // Looking for values that are superior and swapping them.
             while(left < right &&
                     data.get(left).compareTo(data.get(right)) < 0) left ++;
 
@@ -135,6 +160,13 @@ public class SortingMethods {
         }
     }
 
+    /**
+     * Sorts the values within a collection from a given start to end.
+     * @param data Data to sort
+     * @param left Left boundary to start sorting.
+     * @param right Right boundary to end sorting.
+     * @param <T> Object type of the items stored in the given data.
+     */
     private static <T extends Comparable<T>> void QuickSortRecursive(List<T> data, int left, int right) {
         int pivot;
         if (left >= right) return;
@@ -143,11 +175,26 @@ public class SortingMethods {
         QuickSortRecursive(data, pivot + 1, right);
     }
 
+    /**
+     * Return the digit in the selected index.
+     * @param number Number to take the digit from.
+     * @param digitIndex Index of the digit to be retrieved, starting from 0;
+     * @return The digit in the asked index.
+     */
     private static int getDigit(int number, int digitIndex){
         if (digitIndex == 0) return number % 10; // Returning the last digit.
         else return getDigit(number/10, digitIndex - 1);
     }
 
+    /**
+     * Sort a set of values based on a numeric attribute, by grouping them in buckets of objects that
+     * have the same digit in an specified digitIndex.
+     * @param data Data to be classified.
+     * @param getNumericValue Getter function for fetching the numeric attribute of the object.
+     * @param digitIndex
+     * @return Sorted List based on the selected index.
+     * @param <T> Object type of the items stored in the given data.
+     */
     public static <T extends Comparable<T>> List<T> orderByBuckets (List<T> data, Function<T, Integer> getNumericValue, int digitIndex){
         int i, j;
         int dataSize = data.size();

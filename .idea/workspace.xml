@@ -65,7 +65,22 @@
       <recent name="org" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SortingMethodsTest.testRadixSort">
+  <component name="RunManager" selected="JUnit.SortingMethodsTest">
+    <configuration name="SortingMethodsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sorting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App_main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="App_main" />
+      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SortingMethodsTest.testBucketSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sorting" />
       <extension name="coverage">
@@ -77,22 +92,6 @@
       <option name="PACKAGE_NAME" value="App_main" />
       <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
       <option name="METHOD_NAME" value="testBucketSort" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingMethodsTest.testGnomeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sorting" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App_main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="App_main" />
-      <option name="MAIN_CLASS_NAME" value="App_main.SortingMethodsTest" />
-      <option name="METHOD_NAME" value="testGnomeSort" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SortingMethodsTest" />
         <item itemvalue="JUnit.SortingMethodsTest.testRadixSort" />
         <item itemvalue="JUnit.SortingMethodsTest.testBucketSort" />
         <item itemvalue="JUnit.SortingMethodsTest.testQuickSort" />
         <item itemvalue="JUnit.SortingMethodsTest.testPartition" />
-        <item itemvalue="JUnit.SortingMethodsTest.testGnomeSort" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +178,7 @@
       <workItem from="1675097435428" duration="1684000" />
       <workItem from="1675307297216" duration="2240000" />
       <workItem from="1675374542377" duration="1059000" />
-      <workItem from="1675378914107" duration="9105000" />
+      <workItem from="1675378914107" duration="10219000" />
     </task>
     <servers />
   </component>
@@ -191,13 +190,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
-          <line>81</line>
+          <line>94</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
-          <line>170</line>
+          <line>217</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/App_main/SortingMethods.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
